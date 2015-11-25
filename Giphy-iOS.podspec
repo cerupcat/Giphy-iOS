@@ -8,10 +8,9 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Alex Choi" => "heyalexchoi@gmail.com" }
   s.source           = { :git => "https://github.com/heyalexchoi/Giphy-iOS.git", :tag => s.version.to_s }
-
-  s.platform     = :ios, '7.0'
+  s.ios.deployment_target = "7.0"
+  s.tvos.deployment_target = "9.0"
   s.requires_arc = true
-
   s.source_files = 'Pod/Classes'
-  s.dependency 'AFNetworking/Serialization', '~> 2.3.1'
+  s.dependency 'AFNetworking/Serialization', '~> 3.0.0-beta.2'
 end
